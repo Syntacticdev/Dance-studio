@@ -343,6 +343,10 @@ footer p {
         margin: 0 20px;
     }
 
+    .container {
+        padding-top: 20px;
+    }
+
     .container p {
         width: 50%;
     }
