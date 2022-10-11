@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    overflow-x: hidden;
+}
+
 
 .logo {
     height: 100px;
