@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background: whitesmoke;
+}
+
+
+.logo {
+    height: 100px;
+    width: 120px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu {
+    float: right;
+    line-height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    background: blueviolet;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .5s;
+    background-color: #26262655;
+    top: 50px;
+}
+
+nav.active {
+    width: 50%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+nav ul {
+    display: grid;
+}
+
+
+.container {
+    min-height: 625px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    background: url('./image/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: #fff;
+}
+
+.container * {
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-size: 35px;
+    font-family: 'Silkscreen', cursive;
+}
+
+.container h5 {
+    font-size: 20px;
+}
+
+.container p {
+    width: 100%;
+}
+
+.membership_btn {
+    padding: 10px 20px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.membership_btn:hover {
+    background: goldenrod;
+    color: #fff;
+}
+
+.section_one {
+    display: grid;
+    min-height: 300px;
+    padding: 20px;
+}
+
+.sec_head {
+    border-left: 4px solid gray;
+}
+
+.sec_head * {
+    padding-inline: 5px;
+}
+
+.sec_head span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.section_one p {
+    margin-block: 30px;
+}
+
+.readmore {
+    background: #aabedb;
+    padding: 10px 40px;
+}
+
+.readmore:hover {
+    background: rgb(181, 192, 85);
+}
+
+.showcase_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.showcase_head h1 {
+    font-size: 40px;
+}
+
+.analysis {
+    padding: 60px 0;
+    background: url("./image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -30px;
+    color: #fff;
+    margin-block: 40px;
+}
+
+.divider {
+    background: #262626;
+    height: 3px;
+    width: 100px;
+}
+
+.what_people_say {
+    margin: 30px 0;
+    padding: 0 30px;
+}
+
+.wps_card_head {
+    padding-left: 5px;
+    font-weight: 700;
+    border-left: 3px solid #262626;
+}
+
+.wps_card_head h3 {
+    font-size: 30px;
+}
+
+.wps_card_head span {
+    font-style: italic;
+}
+
+
+
+.analysis_event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event_count {
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.event_type {
+    font-size: 20px;
+}
+
+.plans_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plans_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.plan_card {
+    background-color: #fff;
+    padding: 30px 10px;
+    height: 400px;
+    margin: 20px 0;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.plan_card_head {
+    font-size: 25px;
+}
+
+.plan_price {
+    display: flex;
+}
+
+.plan_currency {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.plan_amount {
+    font-size: 50px;
+}
+
+.plan_divider {
+    font-size: 30px;
+}
+
+.plan_duration,
+.plan_divider {
+    align-self: center;
+
+}
+
+.plans_feature {
+    list-style: none;
+}
+
+.plans_feature li i {
+    margin-right: 10px;
+}
+
+.plan_card:nth-of-type(2) {
+    height: 500px;
+}
+
+.plan_card .readmore {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+}
+
+footer {
+    background: #262626 url("./image/hip-hop-young-man-making-cool-move-white-background-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    padding: 40px;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 20px;
+    width: 100%;
+}
+
+.cta {
+    margin: 20px 0;
+}
+
+.cta a {
+    color: white;
+    margin-right: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .menu {
+        display: none;
+    }
+
+    nav {
+        all: unset;
+        position: relative;
+    }
+
+    nav.active {
+        all: unset;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .container p {
+        width: 50%;
+    }
+
+    .section_one {
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+        height: 450px;
+        margin: 50px auto;
+
+    }
+
+    .section_one_content {
+        padding: 100px 40px;
+
+    }
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 70%;
+        margin-inline: auto;
+
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .analysis {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .plans_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    footer p {
+        width: 50%;
+    }
+}
+
+
+
+
+.swiper {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
