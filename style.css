@@ -388,7 +388,7 @@ footer p {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
     }
 
