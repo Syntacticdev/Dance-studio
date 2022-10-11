@@ -20,6 +20,7 @@ header {
 body {
     font-family: 'Titillium Web', sans-serif;
     background: whitesmoke;
+    overflow-x: hidden;
 }
 
 
@@ -74,6 +75,7 @@ nav.active {
     height: 100vh;
     left: 0;
     top: 0;
+    z-index: 10;
 }
 
 nav ul {
